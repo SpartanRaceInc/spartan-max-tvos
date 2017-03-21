@@ -11,7 +11,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>JW Player TV</string>
+	<string>Spartan Max</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -34,6 +34,6 @@
 		<string>arm64</string>
 	</array>
 	<key>jwplayer.account_key</key>
-	<string>VCyJXbpY</string>
+	<string>zN0xK5t1</string>
 </dict>
 </plist>
