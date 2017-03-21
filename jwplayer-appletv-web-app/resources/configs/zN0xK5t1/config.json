@@ -1,0 +1,16 @@
+{
+  "playlists": [
+    "6sCP1guZ", // Spartan TV
+    "dJac0JtZ", // Obstacle Training
+    "7bmVfobq" // Spartan Strong with Evan Dollard
+  ],
+  "featuredPlaylist": "7bmVfobq",
+  "splashScreen": "images/jw-main.png",
+  "bannerImage": "images/jw-header.png",
+  "backgroundColor": "#cf102d",
+  "autoAdvance": true,
+  "autoAdvanceWarningOffset": 10,
+  "autoAdvanceMessage": "The next video will start in ${offset} seconds.",
+  "searchPlaylist": "6sCP1guZ",
+  "recommendationsPlaylist": "dJac0JtZ"
+}

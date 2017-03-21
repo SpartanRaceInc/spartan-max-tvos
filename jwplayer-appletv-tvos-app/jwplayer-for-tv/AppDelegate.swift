@@ -25,15 +25,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, TVApplicationControllerDe
 
     // Uncomment the following line to debug
     // static let TVBaseURL = "http://localhost/appletv/jwplayer-appletv-web-app"
-    static let TVBaseURL = "https://tvos.jwpsrv.com/current"
-    static let TVConfigURL = "https://tvos.jwpsrv.com/resources/configs"
+    static let TVBaseURL = "http://app-tvos-us.s3-website-us-east-1.amazonaws.com"
+    static let TVConfigURL = "http://app-tvos-us.s3-website-us-east-1.amazonaws.com/resources/configs"
     static let TVBootURL = "\(AppDelegate.TVBaseURL)/js/application.js"
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        self.window = UIWindow(frame: UIScreen.main.bounds)
 
-        let infoBundle = NSBundle.mainBundle()
+        let infoBundle = Bundle.main
 
         let appControllerContext = TVApplicationControllerContext()
 
@@ -41,7 +41,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, TVApplicationControllerDe
         appControllerContext.launchOptions["baseURL"] = AppDelegate.TVBaseURL
         appControllerContext.launchOptions["configService"] = AppDelegate.TVConfigURL
         appControllerContext.launchOptions["account_key"] = infoBundle.infoDictionary?["jwplayer.account_key"]
-        appControllerContext.javaScriptApplicationURL = NSURL(string: AppDelegate.TVBootURL)!
+        appControllerContext.javaScriptApplicationURL = URL(string: AppDelegate.TVBootURL)!
 
         if let options = launchOptions {
             for (kind, value) in options {
