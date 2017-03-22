@@ -74,3 +74,12 @@ Make sure you have set up Search and Recommendations playlists through your JW D
 - An Apple Developer account (only required if you want to list your app in the Apple Store).
 
 Apple TV is a registered trademark of Apple, Inc.
+
+## Settings for Spartan Max
+
+__Spartan App Key:__
+zN0xK5t1
+
+__Spartan TV - ID:__ 6sCP1guZ
+__Obstacle Training - ID:__ dJac0JtZ
+__Spartan Strong with Evan Dollard - ID:__ 7bmVfobq
